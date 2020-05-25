@@ -1,0 +1,36 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n,odd=1;
+  cin>>n;
+  for(int i=0;i<n;i++)
+  {
+    	for(int j=0;j<odd;j++)
+        {
+          	if(j%2!=0)
+            	cout<<"*";
+        	else
+              	cout<<i+1;
+        }
+        odd += 2;
+        cout<<endl;
+    
+  }
+  for(int i=n;i>0;i--)
+  {
+    	odd -=2;
+    	for(int j=0;j<odd;j++)
+        {
+          	if(j%2!=0)
+            	cout<<"*";
+        	else
+              	cout<<i;
+        }
+        
+        cout<<endl;
+    
+  }
+  return 0;
+  
+}
